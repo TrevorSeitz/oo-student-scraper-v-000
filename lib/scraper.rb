@@ -8,7 +8,7 @@ class Scraper
     student_hash = {}
     html = File.read(index_url)
     doc = Nokogiri::HTML(html)
-
+binding.pry
     doc.css(".student-card").each do |student|
 # binding.pry
     student_hash = {
